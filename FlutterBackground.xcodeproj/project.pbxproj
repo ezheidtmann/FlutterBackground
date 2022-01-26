@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		72799DBD27A09BCD00C9740F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72799DBC27A09BCD00C9740F /* AppDelegate.swift */; };
-		72799DBF27A09BCD00C9740F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72799DBE27A09BCD00C9740F /* SceneDelegate.swift */; };
 		72799DC127A09BCD00C9740F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72799DC027A09BCD00C9740F /* ViewController.swift */; };
 		72799DC427A09BCD00C9740F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72799DC227A09BCD00C9740F /* Main.storyboard */; };
 		72799DC627A09BCF00C9740F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72799DC527A09BCF00C9740F /* Assets.xcassets */; };
 		72799DC927A09BCF00C9740F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72799DC727A09BCF00C9740F /* LaunchScreen.storyboard */; };
+		72799DD127A09FB000C9740F /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72799DD027A09FB000C9740F /* Storyboard.storyboard */; };
+		AB4D18462D02C483CE188B29 /* Pods_FlutterBackground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9212066846079CC9E471D30 /* Pods_FlutterBackground.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A9ADFA8BFA2F39447B33F4D /* Pods-FlutterBackground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlutterBackground.debug.xcconfig"; path = "Target Support Files/Pods-FlutterBackground/Pods-FlutterBackground.debug.xcconfig"; sourceTree = "<group>"; };
+		60D2363F32C5A3DAE54498EC /* Pods-FlutterBackground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlutterBackground.release.xcconfig"; path = "Target Support Files/Pods-FlutterBackground/Pods-FlutterBackground.release.xcconfig"; sourceTree = "<group>"; };
 		72799DB927A09BCD00C9740F /* FlutterBackground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlutterBackground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72799DBC27A09BCD00C9740F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72799DBE27A09BCD00C9740F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		72799DC027A09BCD00C9740F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		72799DC327A09BCD00C9740F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72799DC527A09BCF00C9740F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72799DC827A09BCF00C9740F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72799DCA27A09BCF00C9740F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72799DD027A09FB000C9740F /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		C9212066846079CC9E471D30 /* Pods_FlutterBackground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlutterBackground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB4D18462D02C483CE188B29 /* Pods_FlutterBackground.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				72799DBB27A09BCD00C9740F /* FlutterBackground */,
 				72799DBA27A09BCD00C9740F /* Products */,
+				E9A2931358BEF4AAE72F9A35 /* Pods */,
+				8F560DD04B2D0F2593243130 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +63,8 @@
 		72799DBB27A09BCD00C9740F /* FlutterBackground */ = {
 			isa = PBXGroup;
 			children = (
+				72799DD027A09FB000C9740F /* Storyboard.storyboard */,
 				72799DBC27A09BCD00C9740F /* AppDelegate.swift */,
-				72799DBE27A09BCD00C9740F /* SceneDelegate.swift */,
 				72799DC027A09BCD00C9740F /* ViewController.swift */,
 				72799DC227A09BCD00C9740F /* Main.storyboard */,
 				72799DC527A09BCF00C9740F /* Assets.xcassets */,
@@ -67,6 +74,23 @@
 			path = FlutterBackground;
 			sourceTree = "<group>";
 		};
+		8F560DD04B2D0F2593243130 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9212066846079CC9E471D30 /* Pods_FlutterBackground.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9A2931358BEF4AAE72F9A35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A9ADFA8BFA2F39447B33F4D /* Pods-FlutterBackground.debug.xcconfig */,
+				60D2363F32C5A3DAE54498EC /* Pods-FlutterBackground.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72799DCD27A09BCF00C9740F /* Build configuration list for PBXNativeTarget "FlutterBackground" */;
 			buildPhases = (
+				6B707D02FC039D7A09319512 /* [CP] Check Pods Manifest.lock */,
+				49543BDF928D1AA21D454735 /* [CP-User] Run Flutter Build my_flutter Script */,
 				72799DB527A09BCD00C9740F /* Sources */,
 				72799DB627A09BCD00C9740F /* Frameworks */,
 				72799DB727A09BCD00C9740F /* Resources */,
+				350CDCB0F71A965DAE9B6619 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +153,65 @@
 			buildActionMask = 2147483647;
 			files = (
 				72799DC927A09BCF00C9740F /* LaunchScreen.storyboard in Resources */,
+				72799DD127A09FB000C9740F /* Storyboard.storyboard in Resources */,
 				72799DC627A09BCF00C9740F /* Assets.xcassets in Resources */,
 				72799DC427A09BCD00C9740F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		350CDCB0F71A965DAE9B6619 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlutterBackground/Pods-FlutterBackground-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlutterBackground/Pods-FlutterBackground-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlutterBackground/Pods-FlutterBackground-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49543BDF928D1AA21D454735 /* [CP-User] Run Flutter Build my_flutter Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Run Flutter Build my_flutter Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/my_flutter/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
+		6B707D02FC039D7A09319512 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlutterBackground-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		72799DB527A09BCD00C9740F /* Sources */ = {
@@ -140,7 +220,6 @@
 			files = (
 				72799DC127A09BCD00C9740F /* ViewController.swift in Sources */,
 				72799DBD27A09BCD00C9740F /* AppDelegate.swift in Sources */,
-				72799DBF27A09BCD00C9740F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +280,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -262,6 +342,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -284,11 +365,14 @@
 		};
 		72799DCE27A09BCF00C9740F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A9ADFA8BFA2F39447B33F4D /* Pods-FlutterBackground.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HYW7H67MDR;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FlutterBackground/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -311,11 +395,14 @@
 		};
 		72799DCF27A09BCF00C9740F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60D2363F32C5A3DAE54498EC /* Pods-FlutterBackground.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HYW7H67MDR;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FlutterBackground/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
