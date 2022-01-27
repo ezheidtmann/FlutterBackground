@@ -13,16 +13,19 @@ First, make sure you have `flutter` 2.8.1 installed. Then:
     cd my_flutter && flutter pub get && flutter build ios-framework
     cd .. && pod install
  
-Open XCode, profile with Instruments (Allocations) and watch the memory graph. Tap the home button to move the app to the background; tap the app to bring it back to the foreground.
+Open XCode, run Profile (Command-I), choose Allocations in Instruments and watch the memory graph. Tap the home button to move the app to the background; tap the app to bring it back to the foreground.
 
 We see the following measurements on an iPhone 7 Plus:
 
 -   2.3MB before launching Flutter
 -   26MB after launching Flutter, in foreground
--   15MB in background
+-   10MB in background
 -   27MB after re-foregrounding
--   17MB after re-backgrounding
+-   12MB after re-backgrounding
 
-We're looking to get back to 2.3MB by destroying Flutter.
+![image (1)](https://user-images.githubusercontent.com/1178915/151409557-3c53b57e-502a-4a97-9dad-c3affb5a5e89.png)
 
+This behavior is suggestive of a memory leak. Perhaps some plugins are holding on to something?
+
+We're hoping to get back to 2.3MB by destroying Flutter and freeing any associated memory.
 
