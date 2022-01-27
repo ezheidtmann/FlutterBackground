@@ -65,10 +65,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // running async to avoid crash; I guess we need to wait for the window to re-draw
             if let engine = self.flutterEngine {
                 debugPrint("destroying engine")
+                engine.viewController = nil
                 engine.destroyContext()
                 self.flutterEngine = nil
-                engine.viewController = nil
-                
             }
         }
     }
