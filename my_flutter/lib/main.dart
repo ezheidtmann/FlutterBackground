@@ -1,6 +1,19 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MyApp());
+PigeonFlutterBridge pigeonReceiver;
+
+class PigeonFlutterReceiver implements PigeonFlutterBridge {
+  @override
+  void sendRandomValue(SingleValue arg) {
+    print("got random value ${arg.theValue}");
+  }
+}
+
+void main() {
+  pigeonReciever = PigeonFlutterReceiver(); 
+  PigeonFlutterBridge.setup(pigeonReceiver);
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);

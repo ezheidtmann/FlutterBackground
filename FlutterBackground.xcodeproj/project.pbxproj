@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		202778B427A35687002F84D0 /* UIWindow+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202778B327A35687002F84D0 /* UIWindow+Additions.swift */; };
+		202778B827A4851C002F84D0 /* Pigeon.m in Sources */ = {isa = PBXBuildFile; fileRef = 202778B627A4851C002F84D0 /* Pigeon.m */; };
+		202778BB27A486E7002F84D0 /* PigeonBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202778BA27A486E7002F84D0 /* PigeonBridge.swift */; };
 		72799DBD27A09BCD00C9740F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72799DBC27A09BCD00C9740F /* AppDelegate.swift */; };
 		72799DC127A09BCD00C9740F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72799DC027A09BCD00C9740F /* ViewController.swift */; };
 		72799DC427A09BCD00C9740F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72799DC227A09BCD00C9740F /* Main.storyboard */; };
@@ -20,6 +22,10 @@
 /* Begin PBXFileReference section */
 		0A9ADFA8BFA2F39447B33F4D /* Pods-FlutterBackground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlutterBackground.debug.xcconfig"; path = "Target Support Files/Pods-FlutterBackground/Pods-FlutterBackground.debug.xcconfig"; sourceTree = "<group>"; };
 		202778B327A35687002F84D0 /* UIWindow+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Additions.swift"; sourceTree = "<group>"; };
+		202778B627A4851C002F84D0 /* Pigeon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pigeon.m; sourceTree = "<group>"; };
+		202778B727A4851C002F84D0 /* Pigeon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pigeon.h; sourceTree = "<group>"; };
+		202778B927A4857F002F84D0 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		202778BA27A486E7002F84D0 /* PigeonBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PigeonBridge.swift; sourceTree = "<group>"; };
 		60D2363F32C5A3DAE54498EC /* Pods-FlutterBackground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlutterBackground.release.xcconfig"; path = "Target Support Files/Pods-FlutterBackground/Pods-FlutterBackground.release.xcconfig"; sourceTree = "<group>"; };
 		72799DB927A09BCD00C9740F /* FlutterBackground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlutterBackground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72799DBC27A09BCD00C9740F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		202778B527A4851C002F84D0 /* Pigeon */ = {
+			isa = PBXGroup;
+			children = (
+				202778B627A4851C002F84D0 /* Pigeon.m */,
+				202778B727A4851C002F84D0 /* Pigeon.h */,
+			);
+			path = Pigeon;
+			sourceTree = "<group>";
+		};
 		72799DB027A09BCC00C9740F = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +80,7 @@
 		72799DBB27A09BCD00C9740F /* FlutterBackground */ = {
 			isa = PBXGroup;
 			children = (
+				202778B527A4851C002F84D0 /* Pigeon */,
 				72799DD027A09FB000C9740F /* Storyboard.storyboard */,
 				72799DBC27A09BCD00C9740F /* AppDelegate.swift */,
 				72799DC027A09BCD00C9740F /* ViewController.swift */,
@@ -73,6 +89,8 @@
 				72799DC727A09BCF00C9740F /* LaunchScreen.storyboard */,
 				72799DCA27A09BCF00C9740F /* Info.plist */,
 				202778B327A35687002F84D0 /* UIWindow+Additions.swift */,
+				202778B927A4857F002F84D0 /* BridgingHeader.h */,
+				202778BA27A486E7002F84D0 /* PigeonBridge.swift */,
 			);
 			path = FlutterBackground;
 			sourceTree = "<group>";
@@ -224,8 +242,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				72799DC127A09BCD00C9740F /* ViewController.swift in Sources */,
+				202778B827A4851C002F84D0 /* Pigeon.m in Sources */,
 				72799DBD27A09BCD00C9740F /* AppDelegate.swift in Sources */,
 				202778B427A35687002F84D0 /* UIWindow+Additions.swift in Sources */,
+				202778BB27A486E7002F84D0 /* PigeonBridge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +415,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = FlutterBackground/BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -426,6 +447,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = FlutterBackground/BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
